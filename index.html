@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mom's Message</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #0000ff, #000099); /* Blue gradient background */
+    }
+
+    #letter {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 96px; /* Larger letter size */
+      color: #fff;
+      cursor: pointer;
+      background: linear-gradient(to right, #ff0000, #990000); /* Red gradient background for the letter */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    #message-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 60%;
+      margin: 10% auto;
+      background: url('https://media.tenor.com/VJXIK10Tu44AAAAi/mochi-cute.gif') center/cover fixed no-repeat;
+      backdrop-filter: blur(10px);
+      overflow: hidden;
+    }
+
+    #message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #000;
+      font-size: 24px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="letter" onclick="showMessage()">💌</div>
+  
+  <div id="message-container">
+    <div id="message">
+      <p>
+        Mumma, main tumhe bahut miss karti hu...<br>
+        Tum apna khayal karo aur jaldi se thik ho jao, pleaseee ❤️😢<br>
+        Aur khana v thik se khana acche se...<br>
+        Aur mujhe miss karti ho ya nhi? ❤️😢
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      var messageContainer = document.getElementById("message-container");
+      messageContainer.style.display = "block";
+    }
+  </script>
+</body>
+</html>
